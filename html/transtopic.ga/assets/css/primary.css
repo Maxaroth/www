@@ -1,1 +1,18 @@
- 
+body {
+}
+.navbar {
+    overflow: hidden;
+    text-align: center;
+}
+.navbar a {
+    text-align: center;
+    padding: 15px 15px;
+    text-decoration: none;
+    background-color: #eeeeee;
+}
+.navbar a:hover {
+    background-color: #efefef;
+}
+.navbar a.active {
+    background-color: blue;
+} 

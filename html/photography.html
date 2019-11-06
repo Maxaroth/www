@@ -10,7 +10,7 @@
         </h1>
         <hr>
         <div class="navbar">
-            <a class="active" href="/index.html">
+            <a href="/index.html">
                 Home
             </a>
             <a href="/files.html">
@@ -22,16 +22,30 @@
             <a href="/external.html">
                 External
             </a>
-	    <a href="/photography.html">
+	    <a class="active" href="/photography.html">
 		Photos
-	    </a>  
+	    </a>
             <a style="float:right" href="/serverinfo.html">
                 Server info
             </a>
         </div>
         <hr>
       
-            
+        <?php
+
+  	    $files = scandir('/home/maxaroth/photos/');
+
+    	    foreach($files as $file) {
+
+       		if($file !== "." && $file !== "..") {
+
+           	 echo "<img src='$file' />";
+
+       	    }
+
+	}
+
+	?>    
     </body>
     <div class="copyinfo">
         <p>

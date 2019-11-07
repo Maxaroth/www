@@ -1,5 +1,12 @@
-body {
+@font-face { 
+    font-family: testtesties;
+    src: url(assets/fonts/albas.ttf); 
 }
+body {
+     
+}
+.titico {
+    font-family: testtesties
 .navbar {
     overflow: hidden;
     text-align: center;
